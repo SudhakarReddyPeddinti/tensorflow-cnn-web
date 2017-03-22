@@ -22,7 +22,7 @@ $(function () {
     $('#txt_area').hide();
     $('#meow').show();
     var tmp_img = document.createElement("img");
-    tmp_img.src = 'http://'+location.host+$('#img_plc').attr('src');
+    tmp_img.src = 'https://'+location.host+$('#img_plc').attr('src');
     var base64 = getBase64Image(tmp_img);
     $.ajax({
       type: "POST",
