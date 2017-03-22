@@ -1,1 +1,1 @@
-web: gunicorn label_image
+web: gunicorn label_image:app
