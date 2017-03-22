@@ -26,7 +26,7 @@ $(function () {
     var base64 = getBase64Image(tmp_img);
     $.ajax({
       type: "POST",
-      url: "http://localhost:5000/api/predict",
+      url: "/api/predict",
       data: { imageBase64: base64 },
       success: function (result) {
         var res = result.results[0];
