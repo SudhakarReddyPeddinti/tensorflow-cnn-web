@@ -14,7 +14,6 @@ def predict():
     print("request received")
 
     data = request.values['imageBase64']
-    print(data)
     with open("imageToPredict.jpeg", "wb") as fh:
         fh.write(base64.decodestring(data))
     # image_data = re.sub('^data:image/.+;base64,', '', image_b64).decode('base64')
